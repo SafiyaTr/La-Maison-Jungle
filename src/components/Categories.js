@@ -3,6 +3,7 @@ import '../styles/Categories.css'
 function Categories({setActiveCategory, categories, activeCategory}) {
     return(
         <div className='lmj-categories'>
+            <label>Choisissez une catégorie : </label>
             <select
                 value={activeCategory}
                 onChange={(e) => setActiveCategory(e.target.value)}
